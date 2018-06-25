@@ -1,0 +1,12 @@
+
+<select [(ngModel)]="role" (change)="filterList()">
+  <option value=""></option>
+  <option value="teacher">Teacher</option>
+  <option value="student">Student</option>
+</select>
+<select [(ngModel)]="sex" (change)="filterList()">
+  <option value=""></option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+</select>
+<p *ngFor="let person of list"> {{person.name}}</p>
